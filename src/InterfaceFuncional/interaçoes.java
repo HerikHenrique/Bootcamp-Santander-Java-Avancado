@@ -11,7 +11,7 @@ public class interaçoes {
         arr(nomes);
         multiplica(numeros);
     }
-
+//test
     public static void imprimirNomesFiltrados(String... nomes){
         String nomesParaImprimir= "";
         for(int i = 0; i<nomes.length; i++) {
