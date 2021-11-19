@@ -2,6 +2,7 @@ package CollectionAndStreams;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class Aula1InterfaceList {
@@ -51,5 +52,17 @@ public class Aula1InterfaceList {
         //indexOf(); se não tiver na lista o resultado é -1
         int posicao = nomes.indexOf("Larissa");
         System.out.println(posicao);
+
+        for (String nomeDoItem: nomes){
+            System.out.println(nomeDoItem);
+        }
+
+        Iterator<String> iterator = nomes.iterator();
+
+        //has.Next() retorna um Boolean sempre que existir mais um item no nosso array
+        //next() retorna o objeto que estamos iterando no momento
+        while (iterator.hasNext()){
+            System.out.println(">>>>>>>" + iterator.next());
+        }
     }
 }
